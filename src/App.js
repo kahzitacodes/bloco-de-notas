@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         React and Tailwind CSS in action
       </p>
       <Routes>
+        <Route path="/" element={<Home />} />
       </Routes>
     </div>
   );
